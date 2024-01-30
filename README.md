@@ -1,6 +1,5 @@
 ## How to run
 ```bash
-docker build -t python-django-app .
-
-docker run -it -p 8000:8000 python-django-app
+docker build .
+docker-compose up
 ```
