@@ -27,16 +27,16 @@ Date      	By	Comments
 <body>
     {% block navbar %}
     <div class="navbar">
-        <a href="{% url 'index' %}" class="navbar-item"><img src="/static/plant.png"></a>
+        <a href="{% url 'index' %}" class="navbar-brand"><img src="/static/plant.png" style="width: 30px"></a>
+        <a href="{% url 'hello_world' %}" class="navbar-item">Home</a>
     </div>
     {% endblock %}
-    <div class="body-content">
-        {% block content %}
-        {% endblock %}
-        <hr/>
+    {% block content %}
+    {% endblock %}
+    {% block footer %}
         <footer>
             <p>&copy; 2018</p>
         </footer>
-    </div>
+    {% endblock %}
 </body>
 </html>
