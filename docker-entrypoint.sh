@@ -6,6 +6,10 @@ ls -al
 echo "Collect static files"
 python /code/app/manage.py collectstatic --noinput
 
+# Make migrations
+echo "Make migrations"
+python /code/app/manage.py makemigrations
+
 # Apply database migrations
 echo "Apply database migrations"
 python /code/app/manage.py migrate

@@ -12,5 +12,11 @@ Date      	By	Comments
 {% extends "index.html" %}
 
 {% block content %}
-<h1>Hello, World!</h1>
+<!-- Use it like any other HTML element -->
+<h2>Upload GLB File</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="glb_file">
+    <button type="submit">Upload</button>
+</form>
 {% endblock %}

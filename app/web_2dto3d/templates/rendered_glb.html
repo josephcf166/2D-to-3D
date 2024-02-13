@@ -1,0 +1,7 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h2>Rendered Model</h2>
+<!-- Get GLB from previous form "glb" -->
+<model-viewer src="{{ glb_url }}" alt="Uploaded Model" camera-controls touch-action="pan-y"></model-viewer>
+{% endblock %}
