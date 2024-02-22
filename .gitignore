@@ -1,3 +1,6 @@
 .venv/
 *.pyc
 **/*.pyc
+**/.DS_Store
+app/media/glb/*
+**/*.glb
